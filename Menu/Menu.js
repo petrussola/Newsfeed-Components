@@ -33,3 +33,12 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+// step 1 - write the function
+
+function createMenu(menuItem) {
+  const wrapper = document.createElement('div');
+  const ul = document.createElement('ul');
+
+  
+}
