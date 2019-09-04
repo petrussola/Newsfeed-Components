@@ -109,10 +109,19 @@ function createArticle() {
   // create the html elements
   const wrapper = document.createElement('div');
   const h2 = document.createElement('h2');
+  const pDate = document.createElement('p');
   const p1 = document.createElement('p');
   const p2 = document.createElement('p');
   const p3 = document.createElement('p');
   const button = document.createElement('span');
+
+  // add class attributes if needed
+
+  wrapper.classList.add('article');
+  pDate.classList.add('date');
+  button.classList.add('expandButton');
+
+  console.log(button);
 }
 
 createArticle();
