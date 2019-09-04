@@ -129,10 +129,17 @@ function createArticle(articleData) {
   p2.textContent = articleData.secondParagraph;
   p3.textContent = articleData.thirdParagraph;
 
-  console.log(h2);
-}
+  // add html components inside div
 
-createArticle(data[0]);
+  wrapper.appendChild(h2);
+  wrapper.appendChild(pDate);
+  wrapper.appendChild(p1);
+  wrapper.appendChild(p2);
+  wrapper.appendChild(p3);
+  wrapper.appendChild(button);
+
+  return wrapper;
+}
 
   /*
 
