@@ -71,7 +71,6 @@ function createMenu(menuItem) {
   return wrapper;
 };
 
-console.log(createMenu(menuItems));
-// const newMenu = createMenu(menuItems);
-// const header = document.querySelector(".header")
-// header.appendChild(newMenu);
+const newMenu = createMenu(menuItems);
+const header = document.querySelector(".header")
+header.appendChild(newMenu);
