@@ -38,6 +38,7 @@ let menuItems = [
 
 function createMenu(menuItem) {
   const wrapper = document.createElement('div');
+  wrapper.classList.add("menu");
   const ul = document.createElement('ul');
 
   // step 2 - iterate over the array creating as many list items as items there are in the array
