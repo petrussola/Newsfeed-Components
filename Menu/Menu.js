@@ -40,6 +40,11 @@ function createMenu(menuItem) {
   const wrapper = document.createElement('div');
   wrapper.classList.add("menu");
   const ul = document.createElement('ul');
+  
+  // append ul to the div
+
+  wrapper.appendChild(ul);
+
 
   // step 2 - iterate over the array creating as many list items as items there are in the array
 
@@ -66,4 +71,7 @@ function createMenu(menuItem) {
   return wrapper;
 };
 
-createMenu(menuItems);
+console.log(createMenu(menuItems));
+// const newMenu = createMenu(menuItems);
+// const header = document.querySelector(".header")
+// header.appendChild(newMenu);
