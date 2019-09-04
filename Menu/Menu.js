@@ -47,6 +47,11 @@ function createMenu(menuItem) {
     li.textContent = item;
     return li;
   });
+
+  listItems.forEach( item => {
+    ul.appendChild(item);
+  });
+  console.log(ul)
 };
 
 createMenu(menuItems);
