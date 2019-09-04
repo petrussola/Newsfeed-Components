@@ -105,7 +105,7 @@ const data = [
 
   */ 
  
-function createArticle() {
+function createArticle(articleData) {
   // create the html elements
   const wrapper = document.createElement('div');
   const h2 = document.createElement('h2');
@@ -121,10 +121,18 @@ function createArticle() {
   pDate.classList.add('date');
   button.classList.add('expandButton');
 
-  console.log(button);
+  // add text to html elements
+
+  h2.textContent = articleData.title;
+  pDate.textContent = articleData.date;
+  p1.textContent = articleData.firstParagraph;
+  p2.textContent = articleData.secondParagraph;
+  p3.textContent = articleData.thirdParagraph;
+
+  console.log(h2);
 }
 
-createArticle();
+createArticle(data[0]);
 
   /*
 
