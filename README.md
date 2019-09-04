@@ -78,4 +78,4 @@ Note: Just a reminder the stretch goals are just extra practice using the tools 
 
 * Implement a way to write your own articles using the Component Constructor and some input fields. 
 
-Pere 
+Pere Sola Claver - 12.22 UK time
