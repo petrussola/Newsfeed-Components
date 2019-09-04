@@ -136,6 +136,7 @@ function createArticle(articleData) {
   p1.textContent = articleData.firstParagraph;
   p2.textContent = articleData.secondParagraph;
   p3.textContent = articleData.thirdParagraph;
+  button.textContent = "click me";
 
   // add html components inside div
 
@@ -151,7 +152,6 @@ function createArticle(articleData) {
     wrapper.classList.toggle('article-open');
   })
 
-  console.log(wrapper)
   return wrapper;
 }
 
