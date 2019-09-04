@@ -53,7 +53,10 @@ function createMenu(menuItem) {
   listItems.forEach( item => {
     ul.appendChild(item);
   });
+
+  // step 3 - select menu button html element
+  const menuButton = document.querySelector(".menu-button");
   return wrapper;
 };
 
-createMenu(menuItems);
+console.log(createMenu(menuItems));
