@@ -48,10 +48,12 @@ function createMenu(menuItem) {
     return li;
   });
 
+  // step 2 - add list items to the ul element
+
   listItems.forEach( item => {
     ul.appendChild(item);
   });
-  console.log(ul)
+  return wrapper;
 };
 
 createMenu(menuItems);
