@@ -40,5 +40,13 @@ function createMenu(menuItem) {
   const wrapper = document.createElement('div');
   const ul = document.createElement('ul');
 
-  
-}
+  // step 2 - iterate over the array creating as many list items as items there are in the array
+
+  const listItems = menuItem.map( item => {
+    const li = document.createElement('li')
+    li.textContent = item;
+    return li;
+  });
+};
+
+createMenu(menuItems);
