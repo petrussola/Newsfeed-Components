@@ -151,12 +151,20 @@ function createArticle(articleData) {
     wrapper.classList.toggle('article-open');
   })
 
+  console.log(wrapper)
   return wrapper;
 }
 
+
 // step 4 - iterate the data array
+
+const container = document.querySelector(".articles")
 
 const articleArray = data.map( item => {
   const article = createArticle(item);
   return article;
+});
+
+articleArray.forEach( item => {
+  container.appendChild(item);
 });
